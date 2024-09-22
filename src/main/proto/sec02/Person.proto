@@ -1,0 +1,14 @@
+syntax ="proto3";
+package sec02;
+option java_multiple_files=true;
+option java_package="com.learning.GRPC.models.sec02";
+
+/*
+this is message person
+ */
+message  Person{
+  // name of the person
+  string name =1;
+  // age of the person
+  int32 age = 2;
+}

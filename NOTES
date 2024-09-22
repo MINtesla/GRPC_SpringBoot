@@ -1,0 +1,24 @@
+GRPC notes
+
+1. mvn clean compile 
+
+The command mvn clean compile is used in Apache Maven, a build automation tool for Java projects. Here's a breakdown:
+
+mvn: The command to run Maven.
+clean: Deletes the target directory, removing any previously compiled files and artifacts.
+compile: Compiles the source code of the project, producing class files in the target directory.
+So, this command cleans up any previous builds and then compiles the source code a new.
+
+2.
+syntax ="proto3";
+
+option java_package="com.proto.model";
+
+message Person{
+  string name =1;
+  int32 age = 2;
+}
+
+in this syntax need to be proto3 as it is the latest proto and by default it treat as proto2
+option java_package="com.proto.model";: Sets the Java package name for the generated code.
+message Person is used for defining the message in proto file
